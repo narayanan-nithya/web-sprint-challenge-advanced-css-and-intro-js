@@ -29,7 +29,7 @@ Answer: Accessibility on the web allows all categories of the web users to navig
 
 
 Answer: 1. Use Semantic tags
-        2. Make <h1> to <h6> tags readable for all categories of web users
+        2. Make (h1-h6) tags readable for all categories of web users.
         3. Make the webpage styling vision friendly. 
 3. How would you explain the concept of a variable to someone new to programming?
 
