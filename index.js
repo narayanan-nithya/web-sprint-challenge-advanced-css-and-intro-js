@@ -218,9 +218,9 @@ console.log(artists[2].bio);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 (no function needed) 
 There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Fix this issue and console.log() to check your work. */
-/*artists[8].name = "Vincent Van Gogh"
+artists[8].name = "Vincent Van Gogh"
 console.log(artists[8]);
-console.log(artists);*/
+console.log(artists);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀  
@@ -246,21 +246,19 @@ Example born in 1901 and died in 1959 - included -- born in 1889 and died in 192
 If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
-function get20s(array, key, value) {
+function get20s(array) {
   /*Your Code Here*/
-  let newartists =[];
-  for(let i= 0; i < array.length; i++){
-      if(array[i][key].includes(value) )
-      {
-        newartists.push(array[i].name);
-        
-      }
+  let bornyr = '1900';
+  let diedyr = '1999';
+  const newarr=[];
+  for (let i = 0; i<array.length; i++){
+    if (array[i].years > bornyr && array[i].years < diedyr){
+      newarr.push(array[i].name);
     }
-  return newartists;
+  }
+  return newarr;
 }
-console.log(get20s('task 4',artists, 'years', '1900 - 1999'));
-
-
+console.log(get20s(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use removeArtist to do the following:
