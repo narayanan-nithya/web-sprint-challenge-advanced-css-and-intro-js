@@ -136,7 +136,7 @@ button:hover{
 .artist img{
     width:100%;
 }
-/* media queries optimized for 500px : Task 1*/ 
+                                                /* media queries optimized for 500px : Task 1*/ 
 @media(max-width:500px){
     /* header & nav styles*/
     header{
@@ -161,7 +161,7 @@ button:hover{
         border-left:0.7px solid #626262;
     
     }
-    /*Title section styles*/
+                                                /*Title section styles*/
     .title-container{
         display:flex;
         flex-wrap: wrap;
@@ -205,7 +205,7 @@ button:hover{
     h1{
         font-size: 4.5rem;
     }
-    /*artist section styles*/
+                                                                    /*Artist section styles*/
     .artists-container{
         display:flex;
         flex-direction: column;
